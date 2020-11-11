@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import rospy
+from veides_agent import VeidesAgentNode
+from veides_agent.services import FactsService, ActionCompletedService, EventService, TrailsService, service_factory
+from functools import partial
+
+if __name__ == '__main__':
+    node = VeidesAgentNode(rospy, [
+        partial(service_factory, FactsService),
+        partial(service_factory, ActionCompletedService),
+        partial(service_factory, EventService),
+        partial(service_factory, TrailsService),
+    ])
+
+    while not rospy.is_shutdown():
+        try:
+            node.loop()
+        except rospy.ROSInterruptException:
+            pass
+
+    node.shutdown()

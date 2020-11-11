@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>veides_agent_ros</name>
+  <version>0.1.0</version>
+  <description>Package that allows ROS developers to easily connect agents and interact with Veides platform</description>
+
+  <maintainer email="contact@veides.io">Veides Team</maintainer>
+  <author email="contact@veides.io">Veides Team</author>
+
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>rospy</build_depend>
+  <build_depend>message_generation</build_depend>
+
+  <build_export_depend>rospy</build_export_depend>
+
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+</package>
