@@ -7,7 +7,7 @@ This repository contains package that allows ROS developers to easily connect ag
 * [Requirements](#Requirements)
 * [Installation](#Installation)
 * [Parameters](#Parameters)
-* [Publish topics](#Publish_topics)
+* [Publish topics](#Publish-topics)
 * [Services](#Services)
 
 ## Requirements
