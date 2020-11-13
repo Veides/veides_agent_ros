@@ -40,9 +40,10 @@ Required parameters:
 
 Optional parameters:
 
-| Property          | Description                                                                             |
-| ----------------: | --------------------------------------------------------------------------------------- |
-| veides_agent_name | Agent name used to compose publish topics. By default `veides_agent_client_id` is used. |
+| Property             | Description                                                                             |
+| -------------------: | --------------------------------------------------------------------------------------- |
+| veides_agent_name    | Agent name used to compose publish topics. By default `veides_agent_client_id` is used. |
+| veides_client_capath | Path to certificates directory                                                          |
 
 ## Publish topics
 

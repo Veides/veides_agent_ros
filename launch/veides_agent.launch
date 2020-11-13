@@ -4,6 +4,7 @@
   <arg name="veides_agent_key" />
   <arg name="veides_agent_secret_key" />
   <arg name="veides_client_host" />
+  <arg name="veides_client_capath" default="" />
 
   <node name="veides_agent_$(arg veides_agent_name)" pkg="veides_agent_ros" type="veides_agent_node" output="screen">
     <param name="name" value="$(arg veides_agent_name)" />
@@ -11,5 +12,6 @@
     <param name="key" value="$(arg veides_agent_key)" />
     <param name="secret_key" value="$(arg veides_agent_secret_key)" />
     <param name="host" value="$(arg veides_client_host)" />
+    <param name="capath" value="$(arg veides_client_capath)" />
   </node>
 </launch>

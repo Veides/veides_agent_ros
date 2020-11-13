@@ -30,12 +30,7 @@ add_service_files(
 
 generate_messages()
 
-catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES veides
-#  CATKIN_DEPENDS rospy
-#  DEPENDS system_lib
-)
+catkin_package()
 
 include_directories(
   ${catkin_INCLUDE_DIRS}
