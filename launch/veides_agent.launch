@@ -5,6 +5,9 @@
   <arg name="veides_agent_secret_key" />
   <arg name="veides_client_host" />
   <arg name="veides_client_capath" default="" />
+  <arg name="veides_queue_size" default="5" />
+  <arg name="veides_action_queue_size" default="5" />
+  <arg name="veides_method_queue_size" default="5" />
 
   <node name="veides_agent_$(arg veides_agent_name)" pkg="veides_agent_ros" type="veides_agent_node" output="screen">
     <param name="name" value="$(arg veides_agent_name)" />
@@ -13,5 +16,8 @@
     <param name="secret_key" value="$(arg veides_agent_secret_key)" />
     <param name="host" value="$(arg veides_client_host)" />
     <param name="capath" value="$(arg veides_client_capath)" />
+    <param name="queue_size" value="$(arg veides_queue_size)" />
+    <param name="action_queue_size" value="$(arg veides_action_queue_size)" />
+    <param name="method_queue_size" value="$(arg veides_method_queue_size)" />
   </node>
 </launch>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>veides_agent_ros</name>
-  <version>0.2.0</version>
+  <version>0.3.0</version>
   <description>Package that allows ROS developers to easily connect agents and interact with Veides platform</description>
 
   <maintainer email="contact@veides.io">Veides Team</maintainer>
@@ -13,6 +13,7 @@
   <build_depend>message_generation</build_depend>
 
   <exec_depend>message_runtime</exec_depend>
+  <exec_depend>rospy_message_converter</exec_depend>
 
   <depend>rospy</depend>
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.0] - 2021-05-28
+
+### Added
+
+* Configurable queue sizes for publishers
+* API for methods handling
+* Added reason code field for all service responses
+
 ## [0.2.0] - 2020-11-13
 
 ### Added

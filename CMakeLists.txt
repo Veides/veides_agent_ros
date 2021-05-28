@@ -15,6 +15,7 @@ add_message_files(
    Action.msg
    ActionEntity.msg
    Fact.msg
+   Method.msg
    Trail.msg
 )
 
@@ -25,7 +26,9 @@ add_service_files(
   ActionCompleted.srv
   Event.srv
   Facts.srv
+  MethodCompleted.srv
   Trails.srv
+  RegisterMethod.srv
 )
 
 generate_messages()
